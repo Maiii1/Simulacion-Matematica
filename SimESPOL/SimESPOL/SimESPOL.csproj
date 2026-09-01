@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PruebaSim.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="pythonnet" Version="3.1.0" />
+    <PackageReference Include="R.NET" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ACL">
+      <HintPath>..\..\..\..\Downloads\ACL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
